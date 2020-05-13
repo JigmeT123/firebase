@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fire Chat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="chat-room">
+            <div class="chat-box">
+                <p class="lol">Jigme Tashi</p>
+                Hello, world
+            </div>
+            <div class="chat-box">
+                    <p class="lol">Messi</p>
+                    Hello, Earth.
+                </div>
+        </div>
+        <div id="chat-holder">
+            <input id="nameInput" type="text" placeholder="Your Name"/>
+            <input id="msgInput" type="text" placeholder="Your Message"/>
+            <div id="sendBtn" onclick="sendMsg()"><i class="fa fa-paper-plane"></i></div>
+            
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>     
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAcIGvUT822d2uH0aWtJSpmSvLicEXgNKY",
+    authDomain: "mychatapp-2f2f9.firebaseapp.com",
+    databaseURL: "https://mychatapp-2f2f9.firebaseio.com",
+    projectId: "mychatapp-2f2f9",
+    storageBucket: "",
+    messagingSenderId: "792262082681",
+    appId: "1:792262082681:web:d9ad89bfd57503da"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src='main.js'></script>
+
+</body>
+</html>
